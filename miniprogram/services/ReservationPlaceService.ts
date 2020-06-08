@@ -6,14 +6,14 @@ import { RetryHelper } from '../utils/RetryHelper';
 export class ReservationPlaceService extends BaseService<ReservationPlace>{
 
   constructor(){
-    super('ReservationPlace');
+    super('ReservationPlaces');
   }
 
   public getAvailablePeriods(callback:(result:Array<ReservationPeriod>)=>void, placeId:string, date: string) {
     wx.showLoading({
       title: "loading..."
     });
-    let url = `${this.apiBaseUrl}/api/reservationPlace/${placeId}/periods?dt=${date}`;
+    let url = `${this.apiBaseUrl}/api/reservationPlaces/${placeId}/periods?dt=${date}`;
     wx.request({
       url: url,
       success: (response) => {
