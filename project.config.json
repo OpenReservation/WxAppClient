@@ -30,7 +30,8 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useCompilerModule": false
 	},
 	"appid": "wx0089396a8df636b2",
 	"simulatorType": "wechat",
