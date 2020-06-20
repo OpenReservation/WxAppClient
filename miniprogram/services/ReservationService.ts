@@ -7,14 +7,14 @@ import { RetryHelper } from '../utils/RetryHelper';
 export class ReservationService extends BaseService<Reservation>{
 
   constructor(){
-    super('Reservation');
+    super('Reservations');
   }
 
   public NewReservation(callback:(result:any)=>void,reservation: Reservation, captchaType: string, captcha: string){
     wx.showLoading({
       title: "loading..."  
     });
-    let url = `${this.apiBaseUrl}/api/reservation`;
+    let url = `${this.apiBaseUrl}/api/reservations`;
     wx.request({
       url: url,
       method: "POST",
