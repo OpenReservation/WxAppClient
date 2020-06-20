@@ -18,6 +18,6 @@
 
 ## More
 
-个人域名没有备案，使用了腾讯云的云函数做了一个极简的网关，做了一个请求转发，云函数网关的实现可以参考：<https://github.com/OpenReservation/ReservationServer/tree/dev/ActivityReservation.Clients/ReservationApiFunction>
+个人域名没有备案，使用了腾讯云的云函数做了一个极简的网关，做了一个请求转发，云函数网关的实现可以参考：<https://github.com/OpenReservation/ReservationServer/tree/dev/OpenReservation.Clients/ReservationApiFunction>
 
 服务器端代码：<https://github.com/OpenReservation/ReservationServer>
